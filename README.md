@@ -7,6 +7,7 @@ Analyse the impact of the use of mocks ahead of the real exam.
 
 ## 📌 Executive Summary
 This project analyses a dataset of 1,000 students across 6 global locations to determine the drivers of exam success.
+<img width="541" height="114" alt="image" src="https://github.com/user-attachments/assets/233b7e83-d105-44ef-9940-471157e34d68" />
 
 **Key Business Question:** Does the optional "Mock Exam" actually improve student grades, or is it just a correlation?
 
@@ -27,6 +28,7 @@ I built a regression model to predict final scores based on student attributes.
 * **Mock Exam Impact:** **+7.19 points**.
 * **Degree Impact:** **+3.10 points**.
 * **Retake Penalty:** **-2.59 points** per additional attempt.
+<img width="357" height="243" alt="image" src="https://github.com/user-attachments/assets/e23087a1-3206-4ddf-8732-7bb38e9f8f14" />
 
 > **Business Recommendation:** The data supports aggressive marketing of the Mock Exam, as it provides a quantifiable grade improvement distinct from the student's natural aptitude or education level.
 
@@ -35,6 +37,7 @@ I trained a Logistic Regression model to flag students at risk of failing (<50%)
 * **Overall Accuracy:** 71.5%
 * **Recall (Passes):** 98%
 * **Recall (Failures):** 11%
+<img width="395" height="178" alt="image" src="https://github.com/user-attachments/assets/cf94cc54-07c5-47fb-9913-eb628cb98181" />
 
 ## 📂 Project Structure
 * `data_generator.py`: Python script used to create the synthetic dataset with realistic statistical distributions (Gaussian noise injected).
