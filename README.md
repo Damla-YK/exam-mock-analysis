@@ -50,4 +50,17 @@ If you want to reproduce this analysis on your own machine:
    pip install pandas scikit-learn seaborn matplotlib
 3. Run the analysis script:
    python analysis_script.py
-   
+4. Run your Git commands to upload it**
+
+Once you have saved that file:
+
+1.  **Open your terminal** (inside your project folder).
+2.  **Type these commands exactly**, pressing Enter after each one:
+
+   ```bash   
+   git add .
+
+git commit -m "Finalized README with correct formatting"
+
+git push
+(If git push gives an error, try: git push -u origin main or git push -u origin master)
