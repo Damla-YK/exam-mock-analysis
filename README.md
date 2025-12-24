@@ -17,12 +17,19 @@ Using **Linear Regression**, I isolated the impact of the mock exam and found it
 * **Python 3.9**
 * **Pandas & NumPy:** For data generation and manipulation.
 * **Scikit-Learn:** For Linear Regression and Logistic Classification.
-* **Seaborn:** For statistical visualization.
+* **Seaborn:** For statistical visualisation.
 * **Statistical Inference:** T-Tests and p-value assessment.
 
 ## 📊 Key Insights
 
-### 1. The "Mock Exam" Effect (Linear Regression)
+### 1. The A/B Test (Statistical Inference)
+I compared the average scores of students who used the mock exam vs. those who didn't.
+* **Result:** Students using the mock scored significantly higher (Average: 62 vs 55).
+* **Statistical Significance:** A T-Test yielded a p-value < 0.05, proving the difference is real and not due to chance.
+<img width="436" height="340" alt="image" src="https://github.com/user-attachments/assets/58ffe10c-6ea8-42e6-b7a6-4160885a820b" />
+
+  
+### 2. The "Mock Exam" Effect (Linear Regression)
 I built a regression model to predict final scores based on student attributes.
 * **R-Squared:** 18% (Variance explained by the model).
 * **Mock Exam Impact:** **+7.19 points**.
@@ -32,12 +39,15 @@ I built a regression model to predict final scores based on student attributes.
 
 > **Business Recommendation:** The data supports aggressive marketing of the Mock Exam, as it provides a quantifiable grade improvement distinct from the student's natural aptitude or education level.
 
-### 2. Failure Prediction (Classification)
+### 3. Failure Prediction (Classification)
 I trained a Logistic Regression model to flag students at risk of failing (<50%).
 * **Overall Accuracy:** 71.5%
 * **Recall (Passes):** 98%
 * **Recall (Failures):** 11%
 <img width="395" height="178" alt="image" src="https://github.com/user-attachments/assets/cf94cc54-07c5-47fb-9913-eb628cb98181" />
+<img width="230" height="180" alt="image" src="https://github.com/user-attachments/assets/2635f909-1a03-4049-93c9-2fcb15b8b5b0" />
+
+>  *Note:* The current model is conservative; it underestimates the number of failures. Future iterations would utilise **SMOTE (Synthetic Minority Over-sampling Technique)** to better balance the "Fail" class and catch more at-risk students.
 
 ## 📂 Project Structure
 * `data_generator.py`: Python script used to create the synthetic dataset with realistic statistical distributions (Gaussian noise injected).
