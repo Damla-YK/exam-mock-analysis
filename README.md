@@ -73,4 +73,4 @@ If you want to reproduce this analysis on your own machine:
 In this project, I identified that Class Imbalance (few failures vs. many passes) reduced the model's ability to detect at-risk students (Recall: 11%).
 
 To solve this, I applied **SMOTE (Synthetic Minority Over-sampling Technique)** and **XGBoost** in my follow-up project:
-👉 **[Financial Crime Detection Project]([https://github.com/Damla-YK/Fraud-detection])**
+👉 **[Financial Crime Detection Project](https://github.com/Damla-YK/Fraud-detection)**
